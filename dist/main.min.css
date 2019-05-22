@@ -1,0 +1,216 @@
+.eg-tab {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.eg-tab .wp-tab {
+  height: 0.64rem;
+  border-radius: 6px;
+  border: 1px solid #4a90e2;
+  display: flex;
+}
+.eg-tab .wp-tab .wp-tab-nav {
+  flex: 1 ;
+  box-shadow: 1px 0px 0px 0px #295dae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.26rem;
+  font-weight: 500;
+  color: #4a90e2;
+  cursor: pointer;
+}
+.eg-tab .wp-tab .wp-tab-nav.active {
+  background-color: rgba(1, 115, 211, 0.8);
+  color: white;
+}
+.eg-tab .wp-tab-content {
+  flex: 1;
+}
+.eg-tab .wp-tab-content > div {
+  height: 100%;
+}
+
+.eg-pagination {
+  text-align: center;
+}
+.eg-pagination .pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 0.2rem 0;
+  border-radius: 4px;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  color: #A8CAFF;
+  font-size: 0.14rem;
+}
+.eg-pagination .pagination li {
+  float: left;
+  margin-left: 0.1rem;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #3d71ac;
+  min-width: 0.24rem;
+  height: 0.24rem;
+  line-height: 0.24rem;
+  text-align: center;
+  list-style: none;
+}
+.eg-pagination .pagination li input {
+  height: 0.2rem;
+  line-height: 0.22rem;
+  background: transparent;
+  border: 1px solid #3d71ac;
+  width: 0.5rem;
+  padding: 0;
+}
+.eg-pagination .pagination li.active {
+  background-color: #0091F0;
+}
+.eg-pagination .pagination li:hover {
+  border-color: #1890ff;
+  transition: all 0.3s ease 0s;
+}
+.eg-pagination .pagination .auto {
+  border: none;
+  width: auto;
+}
+
+.eg-table .table {
+  table-layout: fixed;
+  width: 100%;
+}
+.eg-table .table .tr {
+  min-height: 0.4rem;
+}
+.eg-table .table .th,
+.eg-table .table .td {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.16rem;
+  width: 0;
+  padding: 0 0.05rem;
+  border-left: 1px solid #4a90e2;
+}
+.eg-table .table .th:last-child,
+.eg-table .table .td:last-child {
+  border-right: 1px solid #4a90e2;
+}
+.eg-table .table .th {
+  font-weight: 600;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+.eg-table .table .td {
+  line-height: 0.4rem;
+}
+.eg-table .table .th-child {
+  border-left: 1px solid #4a90e2;
+  font-weight: 600;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.16rem;
+  height: 0.8rem;
+  line-height: 0.4rem;
+}
+.eg-table .table .th-child1 {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.16rem;
+  border-bottom: 1px solid #4a90e2;
+  display: flex;
+  justify-content: center;
+}
+.eg-table .table .th-child1:last-child {
+  border-bottom: none;
+}
+.eg-table .table .th-child2 {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.16rem;
+  border-right: 1px solid #4a90e2;
+}
+.eg-table .table .th-child2:last-child {
+  border-right: none;
+}
+.eg-table .table .tbody {
+  display: inline-block;
+  width: 100%;
+  overflow: auto;
+  height: auto;
+}
+.eg-table .table .rec-head {
+  display: flex;
+  width: 100%;
+  background: #295DAE;
+  align-items: center;
+}
+.eg-table .table .rec-row {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #4a90e2;
+}
+
+.eg-modal .eg-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  z-index: 1000;
+}
+.eg-modal .eg-document {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eg-modal .eg-page {
+  position: relative;
+}
+.eg-modal .close-btn {
+  width: 0.18rem;
+  height: 0.18rem;
+  position: absolute;
+  right: 0.16rem;
+  top: 0;
+  font-size: 0.32rem;
+  cursor: pointer;
+}
+.eg-modal .modal-title {
+  height: 0.48rem;
+  background: #264490;
+  border-radius: 3px 3px 0px 0px;
+  font-size: 0.24rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 0.48rem;
+  padding-left: 0.15rem;
+}
+.eg-modal .modal-content {
+  background: rgba(8, 34, 106, 0.8);
+  box-shadow: 0px 0px 6px 0px rgba(0, 70, 170, 0.7);
+  border-radius: 3px;
+  padding: 0.15rem;
+}
+
